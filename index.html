@@ -1,92 +1,355 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV & Portofolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV | Adhi Sukmo Manunggal</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-    <!-- Header -->
+  <body>
+    <!-- ================= HEADER ================= -->
+
     <header>
-        <div class="container">
-            <img src="img/foto.jpg" alt="Foto Profil" class="profile">
-            <h1>Nama Kamu</h1>
-            <p>Mahasiswa Teknik Informatika</p>
-        </div>
+      <!-- ===== Navbar ===== -->
+
+      <nav>
+        <div class="bg-lines"></div>
+        <div class="logo">Curiculum Vitae (CV & Portofolio)</div>
+
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Tentang -->
-    <section>
-        <h2>Tentang Saya</h2>
-        <p>
-            Saya adalah mahasiswa yang tertarik pada bidang
-            Web Development, Artificial Intelligence,
-            dan Pengolahan Citra Digital.
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hero-greeting">Halo, Saya</p>
+
+        <h1>Adhi Sukmo Manunggal</h1>
+
+        <h2>3D Artist | 3D Visualizer</h2>
+
+        <p class="hero-desc">
+          Mahasiswa Teknik Informatika yang memiliki minat dalam bidang 3D
+          Modeling, Visualisasi Arsitektur, dan Rendering.
         </p>
-    </section>
 
-    <!-- Pendidikan -->
-    <section>
-        <h2>Pendidikan</h2>
-
-        <div class="card">
-            <h3>Universitas Darussalam Gontor</h3>
-            <p>S1 Teknik Informatika</p>
-            <p>2023 - Sekarang</p>
+        <div class="hero-button">
+          <button>Download CV</button>
         </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="curve"></div>
+        <img src="assets/img/adhis1.jpg" alt="Foto Adhi" />
+      </div>
     </section>
 
-    <!-- Skill -->
-    <section>
-        <h2>Skill</h2>
+    <!-- ================= ABOUT ================= -->
 
-        <div class="skills">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>Python</span>
-            <span>OpenCV</span>
-            <span>GitHub</span>
+    <section id="about" class="about">
+      <div class="section-title">
+        <h2>Tentang Saya</h2>
+        <p>Mengenal Saya Lebih Dekat</p>
+      </div>
+
+      <div class="about-container">
+        <div class="about-left">
+          <h3>Siapa Saya?</h3>
+
+          <p>
+            Saya adalah mahasiswa Teknik Informatika yang memiliki ketertarikan
+            besar pada dunia teknologi, desain visual, dan kreativitas digital.
+            Bagi saya, teknologi bukan hanya tentang menulis kode, tetapi juga
+            tentang menciptakan solusi yang bermanfaat serta menghadirkan
+            pengalaman visual yang menarik dan bermakna.
+          </p>
+
+          <p>
+            Saya percaya bahwa proses belajar adalah perjalanan yang
+            berkelanjutan. Oleh karena itu, saya selalu berusaha mengembangkan
+            kemampuan, mempelajari teknologi baru, dan terus meningkatkan
+            kualitas diri agar dapat memberikan kontribusi terbaik dalam setiap
+            proyek yang saya kerjakan.
+          </p>
         </div>
-    </section>
 
-    <!-- Portofolio -->
-    <section>
-        <h2>Portofolio</h2>
+        <div class="about-right">
+          <div class="info-box">
+            <h4>Nama</h4>
+            <span>Adhi Sukmo Manunggal</span>
+          </div>
 
-        <div class="portfolio">
+          <div class="info-box">
+            <h4>Domisili</h4>
+            <span>Denpasar, Bali</span>
+          </div>
 
-            <div class="card">
-                <h3>Deteksi Tepi Citra</h3>
-                <p>Proyek OpenCV menggunakan metode Canny.</p>
-            </div>
+          <div class="info-box">
+            <h4>Pendidikan</h4>
+            <span>S1 Teknik Informatika</span>
+          </div>
 
-            <div class="card">
-                <h3>Klasifikasi Gambar CNN</h3>
-                <p>Implementasi Deep Learning menggunakan TensorFlow.</p>
-            </div>
-
-            <div class="card">
-                <h3>Website CV</h3>
-                <p>Website personal menggunakan HTML dan CSS.</p>
-            </div>
-
+          <div class="info-box">
+            <h4>Email</h4>
+            <span>adhisukmo93@student.cs.unida.gontor.ac.id</span>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Kontak -->
-    <section>
-        <h2>Kontak</h2>
+    <!-- ================= SKILLS ================= -->
 
-        <p>Email : emailkamu@gmail.com</p>
-        <p>GitHub : github.com/username</p>
+    <section id="skills" class="skills">
+      <div class="section-title">
+        <h2>Skills</h2>
+        <p>Kemampuan yang Saya Miliki</p>
+      </div>
+
+      <div class="skills-container">
+        <div class="skill-card">
+          <div class="skill-header">
+            <h3>SketchUp</h3>
+            <span>95%</span>
+          </div>
+
+          <p>Membuat model arsitektur 3D secara detail dan presisi.</p>
+
+          <div class="progress">
+            <div class="progress-bar" style="width: 95%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <h3>Lumion</h3>
+            <span>95%</span>
+          </div>
+
+          <p>Membuat rendering realistis dan animasi visual arsitektur.</p>
+
+          <div class="progress">
+            <div class="progress-bar" style="width: 95%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <h3>D5 Render</h3>
+            <span>90%</span>
+          </div>
+
+          <p>
+            Menghasilkan visual berkualitas tinggi dengan pencahayaan realistis.
+          </p>
+
+          <div class="progress">
+            <div class="progress-bar" style="width: 90%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <h3>Blender</h3>
+            <span>85%</span>
+          </div>
+
+          <p>Membuat modeling, material, lighting, dan rendering.</p>
+
+          <div class="progress">
+            <div class="progress-bar" style="width: 85%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <h3>AutoCAD</h3>
+            <span>80%</span>
+          </div>
+
+          <p>Menggambar denah, layout, serta gambar kerja arsitektur.</p>
+
+          <div class="progress">
+            <div class="progress-bar" style="width: 80%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <h3>Photoshop</h3>
+            <span>80%</span>
+          </div>
+
+          <p>Editing hasil render, compositing, dan manipulasi visual.</p>
+
+          <div class="progress">
+            <div class="progress-bar" style="width: 80%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <h3>HTML & CSS</h3>
+            <span>75%</span>
+          </div>
+
+          <p>Membangun website modern, responsive, dan menarik.</p>
+
+          <div class="progress">
+            <div class="progress-bar" style="width: 75%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <h3>JavaScript</h3>
+            <span>65%</span>
+          </div>
+
+          <p>Menambahkan interaktivitas pada website menggunakan JavaScript.</p>
+
+          <div class="progress">
+            <div class="progress-bar" style="width: 65%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= PROJECT ================= -->
+
+    <section id="project" class="project">
+      <div class="section-title">
+        <h2>My Projects</h2>
+        <p>Portfolio Berdasarkan Software</p>
+      </div>
+
+      <!-- SketchUp -->
+      <div class="project-category">
+        <h3>SketchUp</h3>
+
+        <div class="project-container">
+          <div class="project-card">
+            <img src="/assets/img/adhis2.jpg" />
+          </div>
+
+          <div class="project-card">
+            <img src="/assets/img/adhis3.jpg" />
+          </div>
+
+          <div class="project-card">
+            <img src="/assets/img/adhis4.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Blender -->
+
+      <div class="project-category">
+        <h3>Blender</h3>
+
+        <div class="project-container">
+          <div class="project-card">
+            <img src="assets/project/blender1.jpg" />
+          </div>
+
+          <div class="project-card">
+            <img src="assets/project/blender2.jpg" />
+          </div>
+
+          <div class="project-card">
+            <img src="assets/project/blender3.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Lumion -->
+
+      <div class="project-category">
+        <h3>Lumion</h3>
+
+        <div class="project-container">
+          <div class="project-card">
+            <img src="assets/project/lumion1.jpg" />
+          </div>
+
+          <div class="project-card">
+            <img src="assets/project/lumion2.jpg" />
+          </div>
+
+          <div class="project-card">
+            <img src="assets/project/lumion3.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Canva -->
+
+      <div class="project-category">
+        <h3>Canva</h3>
+
+        <div class="project-container">
+          <div class="project-card">
+            <img src="/assets/img/adhisposter1.jpg" />
+          </div>
+
+          <div class="project-card">
+            <img src="/assets/img/adhisposter2.jpg" />
+          </div>
+
+          <div class="project-card">
+            <img src="/assets/img/adhisposter3.jpg" />
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>© 2026 Nama Kamu</p>
-    </footer>
+    <!-- ================= CONTACT ================= -->
 
-</body>
+    <section id="contact" class="contact">
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Hubungi Saya</p>
+      </div>
+
+      <div class="contact-container">
+        <!-- Email -->
+        <div class="contact-card">
+          <div class="contact-icon">📧</div>
+          <h3>Email</h3>
+          <a href="mailto:adhisukmo93@student.cs.unida.gontor.ac.id">
+            Kirim Email
+          </a>
+        </div>
+
+        <!-- Instagram -->
+        <div class="contact-card">
+          <div class="contact-icon">📸</div>
+          <h3>Instagram</h3>
+          <a href="https://instagram.com/adhiss_suee" target="_blank">
+            @adhiss_suee
+          </a>
+        </div>
+
+        <!-- GitHub -->
+        <div class="contact-card">
+          <div class="contact-icon">💻</div>
+          <h3>GitHub</h3>
+          <a href="https://github.com/Adhis-URL" target="_blank"> Adhis-URL </a>
+        </div>
+
+        <!-- WhatsApp -->
+        <div class="contact-card">
+          <div class="contact-icon">📱</div>
+          <h3>WhatsApp</h3>
+          <a href="https://wa.me/6285737426121" target="_blank"> Chat Saya </a>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
