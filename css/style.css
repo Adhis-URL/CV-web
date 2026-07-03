@@ -452,87 +452,98 @@ nav ul li a:hover {
    PROJECT
 =========================== */
 
-.project-container {
-  display: flex;
-
-  justify-content: center;
-
-  gap: 30px;
-
-  flex-wrap: wrap;
+.project {
+  padding: 100px 8%;
 }
 
-.project-card {
-  width: 340px;
-
-  height: 230px;
-
-  border-radius: 20px;
-
-  overflow: hidden;
-
-  transition: 0.3s;
-
-  cursor: pointer;
-}
-
-.project-card img {
-  width: 100%;
-
-  height: 100%;
-
-  object-fit: cover;
-
-  transition: 0.4s;
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-}
-
-.project-card:hover img {
-  transform: scale(1.1);
-}
 .project-category {
   margin-bottom: 80px;
+  text-align: center;
 }
 
 .project-category h3 {
-  font-size: 32px;
-  color: #38bdf8;
-  margin-bottom: 30px;
-  border-left: 5px solid #38bdf8;
-  padding-left: 15px;
+  display: inline-block;
+
+  padding: 14px 40px;
+
+  color: #fff;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(56, 189, 248, 0.5);
+
+  border-radius: 15px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+
+  margin-bottom: 40px;
+
+  transition: 0.3s;
+}
+
+.project-category h3:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+  box-shadow: 0 15px 35px rgba(56, 189, 248, 0.35);
 }
 
 .project-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  justify-items: center;
 }
 
 .project-card {
+  width: 100%;
+  max-width: 360px;
   background: #1e293b;
   border-radius: 18px;
   overflow: hidden;
-  transition: 0.4s;
   cursor: pointer;
+  transition: all 0.35s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
 .project-card img {
   width: 100%;
-  height: 250px;
+  height: 240px;
   object-fit: cover;
-  transition: 0.4s;
+  display: block;
+  transition: transform 0.4s ease;
 }
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .project-card:hover img {
   transform: scale(1.08);
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-category h3 {
+    font-size: 28px;
+  }
+
+  .project-card {
+    max-width: 100%;
+  }
 }
 
 /* ===========================
